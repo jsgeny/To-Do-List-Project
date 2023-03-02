@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>          
+    <h1>To Do List Project. Список дел. + Фильтр по цвету.</h1>
+
+    <div class="task_background">
+        <div class="colors">
+            <input type="radio" name="round" id="white">
+            <label for="white" class="back white"></label>
+        </div>
+        <div class="colors">
+            <input type="radio" name="round"  id="red">
+            <label for="red" class="back red"></label>
+        </div>
+        <div class="colors">
+            <input type="radio" name="round" id="blue">
+            <label for="blue" class="back blue"></label>
+        </div>
+        <div class="colors">
+            <input type="radio" name="round" id="green">
+            <label for="green" class="back green"></label>
+        </div>
+        <div class="colors">
+            <input type="radio" name="round" id="gold">
+            <label for="gold" class="back gold"></label>
+        </div>
+        <div class="colors">
+            <input type="radio" name="round" id="silver">
+            <label for="silver" class="back silver"></label>
+        </div>
+        <div class="colors">
+            <input type="radio" name="round" id="purple">
+            <label for="purple" class="back purple"></label>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="add">
+            <input type="text" class="add_text" placeholder="Добавте задачу в список дел...">
+            <button class="add_button">Добавить</button>
+        </div>
+        <div class="task"></div>
+    </div>
+    <div class="filter">
+        <button class="filter_btn" data-filter="all">all</button>
+        <button class="filter_btn white" data-filter="white">white</button>
+        <button class="filter_btn red" data-filter="red">red</button>
+        <button class="filter_btn blue" data-filter="blue">blue</button>
+        <button class="filter_btn green" data-filter="green">green</button>
+        <button class="filter_btn yellow" data-filter="gold">yellow</button>
+        <button class="filter_btn silver" data-filter="silver">silver</button>
+        <button class="filter_btn purple" data-filter="purple">purple</button>
+    </div>
+</body>
+</html>
